@@ -44,7 +44,7 @@ function main(args) {
             rels.push(owl.find(rn));
         });
     }
-    if (rels == []) {
+    if (rels.length === 0) {
         rels = [ov.part_of(owl)];
     }
     relObjs = rels.map( function(r) {
